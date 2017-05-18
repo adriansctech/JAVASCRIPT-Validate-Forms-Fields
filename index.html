@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ejercicio de recuperacion de JS para 2 DAW, validación de campos con JS">
+    <meta name="title" content="Validar formulario con js.">
+    <meta name="keywords" content="JAVASCRIPT, ADRISC, DAW, Capa cliente">
+    <meta name="author" content="Adrián Sánchez Carchano">
+    <title>Validación de formularios con JAVASCRIPT</title>
+</head>
+
+  <body> 
+    <form name="formulario" method="POST" action="script/altaUsuario.php"> 
+      <fieldset> 
+        <legend>Registro</legend> 
+        <label for="registro_usuario">Usuario: </label>
+        <input id="registro_usuario" type="text" name="registro_usuario">
+        <span id="error_user"></span>
+        <br> 
+        <label for="registro_password">Password:</label>
+        <input id="registro_password" type="password" name="registro_password">
+        <span id="error_password"></span>
+        <br> 
+        <label for="registro_nif">Nif:</label>
+        <input id="registro_nif" type="text" name="registro_nif">
+        <span id="error_nif"></span>
+        <br> 
+        <label for="registro_email">Email:</label>
+        <input id="registro_email" type="text" name="registro_email">
+        <span id="error_mail"></span>
+        <br> 
+        <label for="registro_sexo">
+        Sexo: 
+        <input type="radio" name="sex" value="hombre"/>Hombre 
+        <input type="radio" name="sex" value="mujer"/>Mujer</label>
+        <span id="error_sex"></span>
+        <br />
+        <label for="registro_comentarios">Comentarios: </label>
+        <textarea id="registro_comentarios" name="registro_comentarios"></textarea>
+        <br> 
+        <input id="registro_condiciones" type="checkbox" name="registro_condiciones">
+        <label for="registro_condiciones">Acepto las condiciones</label>
+        <span id="error_conditions"></span>
+        <br> 
+        <input value="Enviar" type="submit"> 
+      </fieldset> 
+    </form>
+    <!-- Incluimos el fichero JS -->
+    <script type="text/javascript" src="script/scripts.js"></script>
+  </body>  
+</html>
